@@ -7,11 +7,11 @@
         <script type="text/javascript" src="app.js"></script>    
     </head>
     <body ng-controller="Money as mon">
-        <div>
-        <p>How much grivnas do you want to convert?</p>
-        <input class="form-group" type="text" ng-model="grivna"/>
-        <p>Your result: {{grivna / mon.value.dollars|currency}}</p>
-        <p>Your result: {{grivna / mon.value.euros|currency:"€"}}</p>
+        <div class="form-group">
+        <p class="bg-primary input-lg">How much grivnas do you want to convert?</p>
+        <input class="form-group input-lg bg-warning" type="text" ng-model="grivna"/>
+        <p class="text-success input-lg bg-info">Your result: {{grivna / mon.value.dollars|currency}}</p>
+        <p class="text-warning input-lg bg-info">Your result: {{grivna / mon.value.euros|currency:"€"}}</p>
         </div>
     </body>
 </html>
